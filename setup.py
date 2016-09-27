@@ -1,11 +1,11 @@
 
 from setuptools import setup
 
-setup(name='troopCalc',
+setup(name='troopcalc',
     version='0.1',
     description='Calculates troop distribution',
-    url='http://github.com/randellpelak/troopCalc',
+    url='http://github.com/randellpelak/troopcalc',
     author='Randell Pelak',
     author_email='randellpelak@gmail.com',
-    packages=['troopCalc'],
+    packages=['troopcalc'],
     zip_safe=False)

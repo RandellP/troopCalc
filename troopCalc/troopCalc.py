@@ -2,5 +2,3 @@
 
 def loadArmy(filepath):
     pass
-
-
