@@ -1,4 +1,0 @@
-
-
-def loadArmy(filepath):
-    pass

@@ -1,15 +1,14 @@
 
 
-class Troop(object):
-    "A specific troop of a specific level"
+class TroopCfg(object):
+    "All the information needed to create a troop of any level"
 
-    def __init__(self,troopCfg,level):
-        self.__name = troopCfg.name
-        self.__type = troopCfg.type   #elixir or dark elixir
-        self.__buildTime = troopCfg.buildTime  #in seconds
-        self.__space = troopCfg.space
-        self.__cost = troopCfg.cost[level]
-        self.__troopCfg = troopCfg
+    def __init__(self,name,type,buildTime,space,costDict):
+        self.__name = name
+        self.__type = type   #elixir or dark elixir
+        self.__buildTime = buildTime  #in seconds
+        self.__space = space
+        self.__cost = costDict.copy()
 
     @property
     def name(self):

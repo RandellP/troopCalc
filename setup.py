@@ -7,5 +7,7 @@ setup(name='troopcalc',
     url='http://github.com/randellpelak/troopcalc',
     author='Randell Pelak',
     author_email='randellpelak@gmail.com',
-    packages=['troopcalc'],
-    zip_safe=False)
+    packages=['troopcalc', 'troopcalc.tests', 'troopcalc.data'],
+    package_dir={'troopcalc': 'troopcalc', 'troopcalc.tests': 'troopcalc/tests', 'troopcalc.data': 'troopcalc/data'},
+    package_data={'troopcalc.data': ['*.json']},
+    )
