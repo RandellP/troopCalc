@@ -19,13 +19,14 @@ class TroopCreator(object):
     def troopCfgs(self):
         return self.__troopCfgs
 
-    def makeTroops(self):
+    def loadTroopCfgs(self):
         fileData = open(self.__jsonFilePath).read()
         jsonData = json.loads(fileData)
-
-        for troopDef in jsonData:
+        troopArray = jsonData["troops"]
+        for troopDef in troopArray:
             name = troopDef["name"]   
-            self.__troopCfgs[name] = TroopCfg(name,troopDef["type"],troopDef["buildTime"],troopDef["space"],troopDef["cost"])
+            self.__troopCfgs[name] = TroopCfg(name,troopDef["type"],troopDef["buildTime"],troopDef["housingSpace"],troopDef["buildCost"])
+
 
     def getTroopCfg(self,name):
       return(self.__troopCfgs.get(name)) #return none if doesn't exist instead of raising an expection

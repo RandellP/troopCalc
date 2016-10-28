@@ -1,37 +1,33 @@
 
-
 class Troop(object):
     "A specific troop of a specific level"
 
     def __init__(self,troopCfg,level):
-        self.__name = troopCfg.name
-        self.__type = troopCfg.type   #elixir or dark elixir
-        self.__buildTime = troopCfg.buildTime  #in seconds
-        self.__space = troopCfg.space
-        self.__cost = troopCfg.cost[level]
         self.__troopCfg = troopCfg
+        self.__level = level
 
     @property
     def name(self):
-        return self.__name
+        return self.__troopCfg.name
 
     @property
     def type(self):
-        return self.__type
+        return self.__troopCfg.type
 
     @property
     def buildTime(self):
-        return self.__buildTime
+        return self.__troopCfg.buildTime
 
     @property
     def space(self):
-        return self.__space
+        return self.__troopCfg.space
 
     @property
     def level(self):
-        return self.__level
+        return self.__troopCfg.level
 
     @property
     def cost(self):
-        return self.__cost
+        return self.__troopCfg.costForLevel(self.__level)
+
 

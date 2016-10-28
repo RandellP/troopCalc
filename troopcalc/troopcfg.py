@@ -3,12 +3,12 @@
 class TroopCfg(object):
     "All the information needed to create a troop of any level"
 
-    def __init__(self,name,type,buildTime,space,costDict):
+    def __init__(self,name,type,buildTime,space,costArray):
         self.__name = name
         self.__type = type   #elixir or dark elixir
         self.__buildTime = buildTime  #in seconds
         self.__space = space
-        self.__cost = costDict.copy()
+        self.__cost = costArray.copy()
 
     @property
     def name(self):
@@ -30,7 +30,5 @@ class TroopCfg(object):
     def level(self):
         return self.__level
 
-    @property
-    def cost(self):
-        return self.__cost
-
+    def costForLevel(self,level):
+        return self.__cost[level - 1]

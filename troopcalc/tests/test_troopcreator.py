@@ -5,14 +5,14 @@ import pytest
 import troopcalc.troopcreator
 from troopcalc.troopcreator import TroopCreator
 
-def test_makeTroops():
+def test_loadTroopCfgs():
     """Test loading json and creating troop objects"""
 
     filePath = pkg_resources.resource_filename("troopcalc.data","test_troops.json")
     creator = TroopCreator(filePath)
-    creator.makeTroops()
+    creator.loadTroopCfgs()
     assert "archer" in creator.troopCfgs
-    assert len(creator.troopCfgs) == 12
+    assert len(creator.troopCfgs) == 19
 
 def test_properties():
     """Test property accessors"""

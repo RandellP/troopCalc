@@ -1,169 +1,261 @@
 
-[
-  {
-    "name": "archer",
-    "type": "elixir",
-    "buildTime": 25,
-    "space": 1,
-    "cost": {
-      "1": 50,
-      "2": 80,
-      "3": 120,
-      "4": 200,
-      "5": 300,
-      "6": 400,
-      "7": 500
+{ 
+  "troops": [
+    {
+      "name": "archer",
+      "type": "Elixir",
+      "buildTime": 25,
+      "housingSpace": 1,
+      "buildCost": [
+        50,
+        80,
+        120,
+        200,
+        300,
+        400,
+        500
+      ]
+    },
+    {
+      "name": "barbarian",
+      "type": "Elixir",
+      "buildTime": 20,
+      "housingSpace": 1,
+      "buildCost": [
+        25,
+        40,
+        60,
+        100,
+        150,
+        200,
+        250
+      ]
+    },
+    {
+      "name": "giant",
+      "type": "Elixir",
+      "buildTime": 120,
+      "housingSpace": 5,
+      "buildCost": [
+        250,
+        750,
+        1250,
+        1750,
+        2250,
+        3000,
+        3500,
+        4000
+      ]
+    },
+    {
+      "name": "goblin",
+      "type": "Elixir",
+      "buildTime": 30,
+      "housingSpace": 1,
+      "buildCost": [
+        25,
+        40,
+        60,
+        80,
+        100,
+        150,
+        200
+      ]
+    },
+    {
+      "name": "wall breaker",
+      "type": "Elixir",
+      "buildTime": 120,
+      "housingSpace": 2,
+      "buildCost": [
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500
+      ]
+    },
+    {
+      "name": "balloon",
+      "type": "Elixir",
+      "buildTime": 300,
+      "housingSpace": 5,
+      "buildCost": [
+        2000,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        5000
+      ]
+    },
+    {
+      "name": "wizard",
+      "type": "Elixir",
+      "buildTime": 300,
+      "housingSpace": 4,
+      "buildCost": [
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000
+      ]
+    },
+    {
+      "name": "healer",
+      "type": "Elixir",
+      "buildTime": 600,
+      "housingSpace": 14,
+      "buildCost": [
+        5000,
+        6000,
+        8000,
+        10000
+      ]
+    },
+    {
+      "name": "idragon",
+      "type": "Elixir",
+      "buildTime": 900,
+      "housingSpace": 20,
+      "buildCost": [
+        25000,
+        29000,
+        33000,
+        37000,
+        42000
+      ]
+    },
+    {
+      "name": "pekka",
+      "type": "Elixir",
+      "buildTime": 900,
+      "housingSpace": 25,
+      "buildCost": [
+        28000,
+        32000,
+        36000,
+        40000,
+        45000
+      ]
+    },
+    {
+      "name": "baby dragon",
+      "type": "Elixir",
+      "buildTime": 600,
+      "housingSpace": 10,
+      "buildCost": [
+        15000,
+        16000,
+        17000,
+        18000
+      ]
+    },
+    {
+      "name": "miner",
+      "type": "Elixir",
+      "buildTime": 300,
+      "housingSpace": 5,
+      "buildCost": [
+        4200,
+        4800,
+        5400,
+        6000
+      ]
+    },
+    {
+      "name": "minion",
+      "type": "DarkElixir",
+      "buildTime": 45,
+      "housingSpace": 2,
+      "buildCost": [
+        6,
+        7,
+        8,
+        9,
+        10, 
+        11, 
+        12 
+      ]
+    },
+    {
+      "name": "hog rider",
+      "type": "DarkElixir",
+      "buildTime": 120,
+      "housingSpace": 5,
+      "buildCost": [
+        40,
+        45,
+        52,
+        58,
+        65, 
+        90 
+      ]
+    },
+    {
+      "name": "valkyrie",
+      "type": "DarkElixir",
+      "buildTime": 300,
+      "housingSpace": 8,
+      "buildCost": [
+        60,
+        100,
+        130,
+        160,
+        190 
+      ]
+    },
+    {
+      "name": "golem",
+      "type": "DarkElixir",
+      "buildTime": 900,
+      "housingSpace": 30,
+      "buildCost": [
+        450,
+        525,
+        600,
+        675,
+        750 
+      ]
+    },
+    {
+      "name": "witch",
+      "type": "DarkElixir",
+      "buildTime": 600,
+      "housingSpace": 12,
+      "buildCost": [
+        250,
+        350,
+        450
+      ]
+    },
+    {
+      "name": "lava hound",
+      "type": "DarkElixir",
+      "buildTime": 900,
+      "housingSpace": 30,
+      "buildCost": [
+        390,
+        450,
+        510,
+        570
+      ]
+    },
+    {
+      "name": "bowler",
+      "type": "DarkElixir",
+      "buildTime": 300,
+      "housingSpace": 6,
+      "buildCost": [
+        130,
+        150,
+        170
+      ]
     }
-  },
-  {
-    "name": "barbarian",
-    "type": "elixir",
-    "buildTime": 20,
-    "space": 1,
-    "cost": {
-      "1": 25,
-      "2": 40,
-      "3": 60,
-      "4": 100,
-      "5": 150,
-      "6": 200,
-      "7": 250
-    }
-  },
-  {
-    "name": "giant",
-    "type": "elixir",
-    "buildTime": 120,
-    "space": 5,
-    "cost": {
-      "1": 250,
-      "2": 750,
-      "3": 1250,
-      "4": 1750,
-      "5": 2250,
-      "6": 3000,
-      "7": 3500,
-      "8": 4000
-    }
-  },
-  {
-    "name": "goblin",
-    "type": "elixir",
-    "buildTime": 30,
-    "space": 1,
-    "cost": {
-      "1": 25,
-      "2": 40,
-      "3": 60,
-      "4": 80,
-      "5": 100,
-      "6": 150,
-      "7": 200
-    }
-  },
-  {
-    "name": "wall breaker",
-    "type": "elixir",
-    "buildTime": 120,
-    "space": 2,
-    "cost": {
-      "1": 1000,
-      "2": 1500,
-      "3": 2000,
-      "4": 2500,
-      "5": 3000,
-      "6": 3500
-    }
-  },
-  {
-    "name": "balloon",
-    "type": "elixir",
-    "buildTime": 300,
-    "space": 5,
-    "cost": {
-      "1": 2000,
-      "2": 2500,
-      "3": 3000,
-      "4": 3500,
-      "5": 4000,
-      "6": 4500,
-      "7": 5000
-    }
-  },
-  {
-    "name": "wizard",
-    "type": "elixir",
-    "buildTime": 300,
-    "space": 4,
-    "cost": {
-      "1": 1500,
-      "2": 2000,
-      "3": 2500,
-      "4": 3000,
-      "5": 3500,
-      "6": 4000
-    }
-  },
-  {
-    "name": "healer",
-    "type": "elixir",
-    "buildTime": 600,
-    "space": 14,
-    "cost": {
-      "1": 5000,
-      "2": 6000,
-      "3": 8000,
-      "4": 10000
-    }
-  },
-  {
-    "name": "idragon",
-    "type": "elixir",
-    "buildTime": 900,
-    "space": 20,
-    "cost": {
-      "1": 25000,
-      "2": 29000,
-      "3": 33000,
-      "4": 37000,
-      "5": 42000
-    }
-  },
-  {
-    "name": "pekka",
-    "type": "elixir",
-    "buildTime": 900,
-    "space": 25,
-    "cost": {
-      "1": 28000,
-      "2": 32000,
-      "3": 36000,
-      "4": 40000,
-      "5": 45000
-    }
-  },
-  {
-    "name": "baby dragon",
-    "type": "elixir",
-    "buildTime": 600,
-    "space": 10,
-    "cost": {
-      "1": 15000,
-      "2": 16000,
-      "3": 17000,
-      "4": 18000
-    }
-  },
-  {
-    "name": "miner",
-    "type": "elixir",
-    "buildTime": 300,
-    "space": 5,
-    "cost": {
-      "1": 4200,
-      "2": 4800,
-      "3": 5400,
-      "4": 6000
-    }
-  }
-]
+  
+  ]
+}
